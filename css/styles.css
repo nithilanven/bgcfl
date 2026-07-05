@@ -300,21 +300,7 @@ textarea {
   resize: vertical;
 }
 .full { grid-column: 1 / -1; }
-.generator {
-  background: #fff;
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow);
-  padding: 24px;
-}
-.generator .row {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0,1fr));
-  gap: 16px;
-  margin-bottom: 16px;
-}
-.generator textarea {
-  min-height: 140px;
-}
+
 .section-label {
   margin: 22px 0 12px;
   font-weight: 800;
@@ -391,20 +377,6 @@ textarea {
     overflow-x: auto;
   }
 }
-
-.scheduler-embed {
-  width: 100%;
-  min-height: 1250px;
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow);
-  background: #fff;
-}
-@media (max-width: 700px) {
-  .scheduler-embed {
-    min-height: 1500px;
-  }
-}
-
 
 /* HEADER OVERLAP FIX */
 .header-inner {
@@ -508,7 +480,6 @@ textarea {
   }
 }
 
-
 /* COMPACT HERO FIX */
 .hero {
   min-height: 150px !important;
@@ -539,23 +510,6 @@ textarea {
     font-size: 15px !important;
   }
 }
-
-
-/* COMBINED ROLES PAGE */
-.scheduler-embed {
-  width: 100%;
-  min-height: 1250px;
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow);
-  background: #fff;
-  margin-top: 16px;
-}
-@media (max-width: 700px) {
-  .scheduler-embed {
-    min-height: 1500px;
-  }
-}
-
 
 /* BRAND TITLE FIX: show full name instead of cutting it */
 .brand {
@@ -618,7 +572,6 @@ textarea {
   }
 }
 
-
 /* ONE-LINE BRAND TITLE FIX */
 .header-inner {
   width: min(1380px, calc(100% - 20px)) !important;
@@ -676,8 +629,6 @@ textarea {
     min-width: 0 !important;
   }
 }
-
-
 
 /* RESOURCES SUBMENU */
 .nav-dropdown {
@@ -784,7 +735,6 @@ textarea {
   }
 }
 
-
 /* REMOVE PAGE BANNER + MOVE DARK BLUE COLOR TO TOP HEADER */
 .site-header {
   background: linear-gradient(135deg, #0b3157, #0e5b82 55%, #123047) !important;
@@ -828,7 +778,6 @@ main {
   margin-top: 32px !important;
 }
 
-
 /* COMPACT RESOURCES SUBMENU FIX */
 .nav .nav-dropdown-menu {
   top: 62px !important;
@@ -858,12 +807,10 @@ main {
   }
 }
 
-
 /* ROLE PAGE LEAD TEXT FIX */
 .page-title + .lead {
   max-width: 100% !important;
 }
-
 
 /* EDUCATIONAL VIDEOS PAGE */
 .video-grid {
@@ -901,12 +848,10 @@ main {
   .video-grid { grid-template-columns: 1fr; }
 }
 
-
 /* REMOVE ONLY THE BOTTOM WHITE STRIP */
 body {
   margin-bottom: 0 !important;
 }
-
 
 /* REMOVE BOTTOM STRIP ONLY */
 html {
@@ -989,10 +934,6 @@ main {
   margin-bottom: 0 !important;
 }
 
-
-
-
-
 .remember-note {
   background: #eef7fc;
   border-left: 4px solid var(--blue);
@@ -1001,8 +942,6 @@ main {
   color: var(--blue-dark);
   font-weight: 600;
 }
-
-
 
 .strategy-box {
   margin: 10px 0 2px;
