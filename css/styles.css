@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --blue: #087db6;
   --blue-dark: #064d77;
   --navy: #10263a;
@@ -652,7 +652,7 @@ textarea {
 }
 
 .nav-dropdown-label::after {
-  content: "▾";
+  content: "â–¾";
   font-size: 11px;
   margin-left: 6px;
 }
@@ -959,4 +959,20 @@ main {
 
 .strategy-box p:last-child {
   margin-bottom: 0;
+}
+
+/* FINAL RESOURCES DROPDOWN OPTIONS */
+.nav-dropdown-menu {
+  min-width: 275px !important;
+  max-height: 80vh !important;
+  overflow-y: auto !important;
+}
+
+.nav-dropdown-menu a {
+  padding: 10px 14px !important;
+}
+
+.resources-grid h3[id],
+.resources-wide-card h3[id] {
+  scroll-margin-top: 95px;
 }
