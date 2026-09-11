@@ -544,8 +544,18 @@ PAGES["educational-videos"].body = PAGES["educational-videos"].body.replace(
   "Toastmasters Tips - Visual Aids"
 );
 
-PAGES.contact.subtitle = "";
-PAGES.contact.body = "";
+PAGES.contact.subtitle = "Questions about BGCFL membership, meetings, or resources.";
+PAGES.contact.body = `
+<h2 class="page-title">Contact</h2>
+<p class="lead">For BGCFL questions, please contact the club by email.</p>
+
+<div class="card resources-wide-card">
+  <h3>Email</h3>
+  <div class="resource-list">
+    <a href="mailto:bgcfl@hotmail.com">bgcfl@hotmail.com <span>Send Email</span></a>
+  </div>
+</div>
+`;
 
 PAGES["handbook-membership"] = {
   title: "Handbook & Membership",
