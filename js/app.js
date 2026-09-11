@@ -12,7 +12,6 @@ const navItems = [
       ["handbook-membership", "Handbook & Membership"],
       ["role-instructions", "Role Instructions"],
       ["role-report-forms", "Meeting Forms"],
-      ["meeting-forms-2", "Meeting Forms 2"],
       ["speaking-tips", "Public Speaking Tips"],
       ["table-topics", "Table Topics Speaker Tips"],
       ["educational-videos", "Educational Videos"],
@@ -508,14 +507,7 @@ PAGES.locations.body = `
 PAGES.resources.body = PAGES.resources.body
   .replace(/\n\s*<p class="remember-note">[\s\S]*?<\/p>\n/, "\n")
   .replace(/Replace .*? with a short pause\./, 'Replace "um," "like," and "you know" with a short pause.')
-  .replace(/\n<\/div>\s*$/, `
-
-  <div class="card resources-wide-card" id="contact-info">
-    <h3>Contact</h3>
-    <p>For BGCFL questions, email <a href="mailto:vgarg30@gmail.com">vgarg30@gmail.com</a>.</p>
-  </div>
-</div>
-`);
+  .replace(/\n<\/div>\s*$/, "\n</div>\n");
 
 PAGES.resources.body = PAGES.resources.body
   .replace(
@@ -552,18 +544,8 @@ PAGES["educational-videos"].body = PAGES["educational-videos"].body.replace(
   "Toastmasters Tips - Visual Aids"
 );
 
-PAGES.contact.subtitle = "Club email contact.";
-PAGES.contact.body = `
-<h2 class="page-title">Contact Us</h2>
-<p class="lead">For BGCFL questions, contact the club by email.</p>
-
-<div class="grid-2">
-  <div class="card">
-    <h3>Club Contact</h3>
-    <p>For BGCFL questions, email <a href="mailto:vgarg30@gmail.com">vgarg30@gmail.com</a>.</p>
-  </div>
-</div>
-`;
+PAGES.contact.subtitle = "";
+PAGES.contact.body = "";
 
 PAGES["handbook-membership"] = {
   title: "Handbook & Membership",
@@ -660,38 +642,6 @@ PAGES["role-report-forms"] = {
     <a href="docs/speaking-practice/Speech-Ideas.xlsx" target="_blank" rel="noopener">Speech Ideas <span>XLSX</span></a>
   </div>
 </div>
-`
-};
-
-PAGES["meeting-forms-2"] = {
-  title: "Meeting Forms 2",
-  subtitle: "",
-  body: `
-<h2 class="page-title">Meeting Forms</h2>
-<p class="lead">Download role reports, editable forms, and practice materials for speeches, evaluations, and Table Topics.</p>
-
-<section class="meeting-forms-2-content">
-  <h3 class="section-heading">Meeting Forms</h3>
-  <ul class="clean-list">
-    <li><a href="docs/role-report-forms/Ah-Counter-Report.pdf" target="_blank" rel="noopener">Ah Counter Report - PDF</a></li>
-    <li><a href="docs/editable-role-forms/Ah-Counter-Report.docx" target="_blank" rel="noopener">Ah Counter Report - Word</a></li>
-    <li><a href="docs/role-report-forms/General-Evaluator-Report.pdf" target="_blank" rel="noopener">General Evaluator Report - PDF</a></li>
-    <li><a href="docs/editable-role-forms/General-Evaluator-Report.docx" target="_blank" rel="noopener">General Evaluator Report - Word</a></li>
-    <li><a href="docs/role-report-forms/Grammarian-Report.pdf" target="_blank" rel="noopener">Grammarian Report - PDF</a></li>
-    <li><a href="docs/editable-role-forms/Grammarian-Report.docx" target="_blank" rel="noopener">Grammarian Report - Word</a></li>
-    <li><a href="docs/role-report-forms/Timer-Report.pdf" target="_blank" rel="noopener">Timer Report - PDF</a></li>
-    <li><a href="docs/editable-role-forms/Timer-Report.docx" target="_blank" rel="noopener">Timer Report - Word</a></li>
-    <li><a href="docs/role-report-forms/Timer-Script-and-Log.pdf" target="_blank" rel="noopener">Timer Script and Log - PDF</a></li>
-    <li><a href="docs/editable-role-forms/General-Speaker-Feedback-Form.docx" target="_blank" rel="noopener">General Speaker Feedback Form - Word</a></li>
-  </ul>
-
-  <h3 class="section-heading">Speaking Practice</h3>
-  <ul class="clean-list">
-    <li><a href="docs/speaking-practice/Evaluation-Handout.docx" target="_blank" rel="noopener">Evaluation Handout - DOCX</a></li>
-    <li><a href="docs/speaking-practice/TM-Evaluation-Worksheet.pdf" target="_blank" rel="noopener">Toastmasters Evaluation Worksheet - PDF</a></li>
-    <li><a href="docs/speaking-practice/Speech-Ideas.xlsx" target="_blank" rel="noopener">Speech Ideas - XLSX</a></li>
-  </ul>
-</section>
 `
 };
 
@@ -811,6 +761,19 @@ PAGES["speaking-tips"] = {
 
 delete PAGES.signup;
 
+function cleanTextEncoding(text) {
+  return String(text)
+    .replace(/Ã¢â‚¬â„¢|â€™/g, "'")
+    .replace(/Ã¢â‚¬Å“|Ã¢â‚¬Â|â€œ|â€�|â€/g, '"')
+    .replace(/Ã¢â‚¬â€œ|Ã¢â‚¬â€|â€“|â€”/g, "-");
+}
+
+for (const page of Object.values(PAGES)) {
+  page.title = cleanTextEncoding(page.title);
+  page.subtitle = cleanTextEncoding(page.subtitle);
+  page.body = cleanTextEncoding(page.body);
+}
+
 window.addEventListener("DOMContentLoaded", render);
 
 function seedFaqChat() {
@@ -869,7 +832,7 @@ function getFaqAnswer(question) {
     return best.answer;
   }
 
-  return "Iâ€™m not sure about that yet. Try asking about meeting time, location, online option, joining, beginner experience, skills learned, roles, CC/CL manuals, or contact information.";
+  return "I'm not sure about that yet. Try asking about meeting time, location, online option, joining, beginner experience, skills learned, roles, or CC/CL manuals.";
 }
 
 
