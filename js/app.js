@@ -51,11 +51,11 @@ PAGES["locations-blank"] = {
     </div>
     <div class="location-detail">
       <span>Meeting Timing</span>
-      <p>Every Saturday<br>10:00 AM - 12:00 PM<br><em>In person only</em></p>
+      <p>Every Saturday<br>10:00 AM to 11:15 AM PST<br><em>In person only</em></p>
     </div>
     <div class="location-detail">
       <span>Club Advisor / Contact</span>
-      <p>Class Counselor: Mr. Gurpreet Singh</p>
+      <p>Club Counselor: Mr. Gurpreet Singh</p>
     </div>
   </div>
 </article>
@@ -73,7 +73,7 @@ PAGES["locations-blank"] = {
     </div>
     <div class="location-detail">
       <span>Club Advisor / Contact</span>
-      <p>Club Counselors</p>
+      <p>Club Counselor: Ms. Kiranmai Reddy</p>
     </div>
   </div>
 </article>
@@ -91,7 +91,7 @@ PAGES["locations-blank"] = {
     </div>
     <div class="location-detail">
       <span>Club Advisor / Contact</span>
-      <p>Club Counselors</p>
+      <p>Club Counselor: Ms. Kiranmai Reddy</p>
     </div>
   </div>
 </article>
@@ -433,11 +433,11 @@ PAGES.locations.body = `
       </div>
       <div class="location-detail">
         <span>Meeting Timing</span>
-        <p>Every Saturday<br>10:00 AM - 12:00 PM<br><em>In person only</em></p>
+        <p>Every Saturday<br>10:00 AM to 11:15 AM PST<br><em>In person only</em></p>
       </div>
       <div class="location-detail">
         <span>Club Advisor / Contact</span>
-        <p>Class Counselor: Mr. Gurpreet Singh</p>
+        <p>Club Counselor: Mr. Gurpreet Singh</p>
       </div>
     </div>
   </article>
@@ -455,7 +455,7 @@ PAGES.locations.body = `
       </div>
       <div class="location-detail">
         <span>Club Advisor / Contact</span>
-        <p>Club Counselors</p>
+        <p>Club Counselor: Ms. Kiranmai Reddy</p>
       </div>
     </div>
   </article>
@@ -473,7 +473,7 @@ PAGES.locations.body = `
       </div>
       <div class="location-detail">
         <span>Club Advisor / Contact</span>
-        <p>Club Counselors</p>
+        <p>Club Counselor: Ms. Kiranmai Reddy</p>
       </div>
     </div>
   </article>
@@ -844,6 +844,7 @@ function getFaqAnswer(question) {
 
   return "I'm not sure about that yet. Try asking about meeting time, location, online option, joining, beginner experience, skills learned, roles, or CC/CL manuals.";
 }
+
 
 
 
