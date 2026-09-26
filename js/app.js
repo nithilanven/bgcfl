@@ -43,19 +43,21 @@ PAGES["locations-blank"] = {
 </p>
 
 <article class="location-card">
-  <h3>Bothell Gavel Club - In Person</h3>
+  <h3>Bothell Gavel Club - Group 1</h3>
   <div class="location-detail-grid">
     <div class="location-detail">
       <span>Meeting Location</span>
-      <p>Sikh Centre of Seattle<br>20412 Bothell Everett Highway<br>Bothell, WA 98012</p>
+      <p>Sikh Centre of Seattle<br>
+      20412 Bothell Everett Highway<br>
+      Bothell, WA 98012</p>
     </div>
     <div class="location-detail">
       <span>Meeting Timing</span>
-      <p>Every Saturday<br>10:00 AM to 11:15 AM PST<br><em>In person only</em></p>
+      <p>Every Saturday<br>8:00 AM to 10:15 AM PST</p>
     </div>
     <div class="location-detail">
       <span>Club Advisor / Contact</span>
-      <p>Club Counselor: Mr. Gurpreet Singh</p>
+      <p>Club Counselor: Vivek Garg</p>
     </div>
   </div>
 </article>
@@ -65,11 +67,12 @@ PAGES["locations-blank"] = {
   <div class="location-detail-grid">
     <div class="location-detail">
       <span>Meeting Location</span>
-      <p>Microsoft Teams<br><em>Meeting link shared with registered families</em></p>
+      <p>Microsoft Teams<br>
+      <em>Meeting link shared with registered families</em></p>
     </div>
     <div class="location-detail">
       <span>Meeting Timing</span>
-      <p>Saturday<br>Join by 3:10 PM<br>Meeting 3:30 PM - 4:30 PM</p>
+      <p>Details coming soon</p>
     </div>
     <div class="location-detail">
       <span>Club Advisor / Contact</span>
@@ -83,39 +86,41 @@ PAGES["locations-blank"] = {
   <div class="location-detail-grid">
     <div class="location-detail">
       <span>Meeting Location</span>
-      <p>Online meeting<br><em>Meeting link shared with registered families</em></p>
+      <p>Online meeting<br>
+      <em>Meeting link shared with registered families</em></p>
     </div>
     <div class="location-detail">
       <span>Meeting Timing</span>
-      <p>Saturday<br>Join by 3:10 PM<br>Meeting 3:30 PM - 4:30 PM</p>
+      <p>Details coming soon</p>
     </div>
     <div class="location-detail">
       <span>Club Advisor / Contact</span>
-      <p>Club Counselor: Ms. Kiranmai Reddy</p>
+      <p>Club Counselor: Mr. Ashutosh Agrawal</p>
     </div>
   </div>
 </article>
 
 <article class="location-card">
-  <h3>Sammamish Gavel Club</h3>
+  <h3>Bothell Gavel Club - Group 4</h3>
   <div class="location-detail-grid">
     <div class="location-detail">
       <span>Meeting Location</span>
-      <p>Sammamish</p>
+      <p>Sikh Centre of Seattle<br>
+      20412 Bothell Everett Highway<br>
+      Bothell, WA 98012</p>
     </div>
     <div class="location-detail">
       <span>Meeting Timing</span>
-      <p>Details coming soon</p>
+      <p>Every Saturday<br>10:00 AM to 11:15 AM PST</p>
     </div>
     <div class="location-detail">
       <span>Club Advisor / Contact</span>
-      <p>Details coming soon</p>
+      <p>Club Counselor: Mr. Gurpreet Singh</p>
     </div>
   </div>
 </article>
 `
 };
-
 function render() {
   const pageName = PAGES[getPageName()] ? getPageName() : "home";
   const page = PAGES[pageName];
