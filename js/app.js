@@ -86,12 +86,12 @@ PAGES["locations-blank"] = {
   <div class="location-detail-grid">
     <div class="location-detail">
       <span>Meeting Location</span>
-      <p>Online meeting<br>
-      <em>Meeting link shared with registered families</em></p>
+      <p>Bothell<br>
+      <em>Park Ridge Community Church, 3805 Maltby Rd, Bothell, WA 98012</em></p>
     </div>
     <div class="location-detail">
       <span>Meeting Timing</span>
-      <p>Details coming soon</p>
+      <p>4:00 PM to 6:30 PM</p>
     </div>
     <div class="location-detail">
       <span>Club Advisor / Contact</span>
@@ -100,24 +100,22 @@ PAGES["locations-blank"] = {
   </div>
 </article>
 
-<article class="location-card">
-  <h3>Bothell Gavel Club - Group 4</h3>
-  <div class="location-detail-grid">
-    <div class="location-detail">
-      <span>Meeting Location</span>
-      <p>Sikh Centre of Seattle<br>
-      20412 Bothell Everett Highway<br>
-      Bothell, WA 98012</p>
-    </div>
-    <div class="location-detail">
-      <span>Meeting Timing</span>
-      <p>Every Saturday<br>10:00 AM to 11:15 AM PST</p>
-    </div>
-    <div class="location-detail">
-      <span>Club Advisor / Contact</span>
-      <p>Club Counselor: Mr. Gurpreet Singh</p>
-    </div>
-  </div>
+<article class="location-card"> 
+  <h3>Bothell Gavel Club - Group 4</h3> 
+  <div class="location-detail-grid"> 
+    <div class="location-detail"> 
+      <span>Meeting Location</span> 
+      <p>Details coming soon</p> 
+    </div> 
+    <div class="location-detail"> 
+      <span>Meeting Timing</span> 
+      <p>Every Saturday<br>10:00 AM to 11:15 AM PST</p> 
+    </div> 
+    <div class="location-detail"> 
+      <span>Club Advisor / Contact</span> 
+      <p>Club Counselor: Mr. Gurpreet Singh</p> 
+    </div> 
+  </div> 
 </article>
 `
 };
