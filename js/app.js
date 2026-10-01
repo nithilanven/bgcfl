@@ -72,7 +72,7 @@ PAGES["locations-blank"] = {
     </div>
     <div class="location-detail">
       <span>Meeting Timing</span>
-      <p>Details coming soon</p>
+      <p>3:15 PM to 4:30 PM</p>
     </div>
     <div class="location-detail">
       <span>Club Advisor / Contact</span>
@@ -91,7 +91,7 @@ PAGES["locations-blank"] = {
     </div>
     <div class="location-detail">
       <span>Meeting Timing</span>
-      <p>4:00 PM to 6:30 PM</p>
+      <p>3:15 PM to 5:00 PM</p>
     </div>
     <div class="location-detail">
       <span>Club Advisor / Contact</span>
@@ -105,11 +105,13 @@ PAGES["locations-blank"] = {
   <div class="location-detail-grid"> 
     <div class="location-detail"> 
       <span>Meeting Location</span> 
-      <p>Details coming soon</p> 
+      <p>Sikh Centre of Seattle<br>
+      20412 Bothell Everett Highway<br>
+      Bothell, WA 98012</p>>
     </div> 
     <div class="location-detail"> 
       <span>Meeting Timing</span> 
-      <p>Every Saturday<br>3:00 PM to 5:15 PM PST</p> 
+      <p>Every Saturday<br>10:00 AM to 11:15 PM PST</p> 
     </div> 
     <div class="location-detail"> 
       <span>Club Advisor / Contact</span> 
