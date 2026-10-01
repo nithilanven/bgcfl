@@ -111,7 +111,7 @@ PAGES["locations-blank"] = {
     </div> 
     <div class="location-detail"> 
       <span>Meeting Timing</span> 
-      <p>Every Saturday<br>10:00 AM to 11:15 PM PST</p> 
+      <p>Every Saturday<br>10:00 AM to 11:15 AM PST</p> 
     </div> 
     <div class="location-detail"> 
       <span>Club Advisor / Contact</span> 
