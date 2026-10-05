@@ -92,7 +92,7 @@ PAGES["locations-blank"] = {
     </div>
     <div class="location-detail">
       <span>Meeting Timing</span>
-      <p>Every Sunday<br>3:15 PM to 5:00 PM, Every weekend</p>
+      <p>Every Sunday<br>3:15 PM to 5:00 PM</p>
     </div>
     <div class="location-detail">
       <span>Club Advisor / Contact</span>
