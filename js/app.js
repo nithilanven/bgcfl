@@ -53,7 +53,7 @@ PAGES["locations-blank"] = {
     </div>
     <div class="location-detail">
       <span>Meeting Timing</span>
-      <p>Every Saturday<br>8:00 AM to 10:15 AM PST</p>
+      <p>Every Saturday<br>8:00 AM to 10:15 AM PST Every weekend</p>
     </div>
     <div class="location-detail">
       <span>Club Advisor / Contact</span>
@@ -72,7 +72,7 @@ PAGES["locations-blank"] = {
     </div>
     <div class="location-detail">
       <span>Meeting Timing</span>
-      <p>3:15 PM to 4:30 PM</p>
+      <p>3:15 PM to 4:30 PM PST Every weekend</p>
     </div>
     <div class="location-detail">
       <span>Club Advisor / Contact</span>
@@ -87,11 +87,12 @@ PAGES["locations-blank"] = {
     <div class="location-detail">
       <span>Meeting Location</span>
       <p>Bothell<br>
-      <em>Park Ridge Community Church, 3805 Maltby Rd, Bothell, WA 98012</em></p>
+      <em>Park Ridge Community Church, 
+      3805 Maltby Rd, Bothell, WA 98012</em></p>
     </div>
     <div class="location-detail">
       <span>Meeting Timing</span>
-      <p>3:15 PM to 5:00 PM</p>
+      <p>3:15 PM to 5:00 PM Every weekend</p>
     </div>
     <div class="location-detail">
       <span>Club Advisor / Contact</span>
@@ -111,7 +112,7 @@ PAGES["locations-blank"] = {
     </div> 
     <div class="location-detail"> 
       <span>Meeting Timing</span> 
-      <p>Every Saturday<br>10:00 AM to 11:15 AM PST</p> 
+      <p>Every Saturday<br>10:00 AM to 11:15 AM PST Evert weekend</p> 
     </div> 
     <div class="location-detail"> 
       <span>Club Advisor / Contact</span> 
