@@ -94,7 +94,7 @@ PAGES["locations-blank"] = {
       <span>Meeting Timing</span>
       <p>Every Sunday<br>3:15 PM to 5:00 PM</p>
     </div>
-    <div class="location-detail">
+    <div class="location-detail">s
       <span>Club Advisor / Contact</span>
       <p>Club Counselor: Mr. Ashutosh Agrawal</p>
     </div>
