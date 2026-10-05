@@ -108,7 +108,7 @@ PAGES["locations-blank"] = {
       <span>Meeting Location</span> 
       <p>Sikh Centre of Seattle<br>
       20412 Bothell Everett Highway<br>
-      Bothell, WA 98012</p>>
+      Bothell, WA 98012</p>
     </div> 
     <div class="location-detail"> 
       <span>Meeting Timing</span> 
